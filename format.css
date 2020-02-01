@@ -1,3 +1,10 @@
+html{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
 h1{
     margin:auto;
     width:100%;
@@ -33,6 +40,15 @@ p {
     border: 3px solid green;
     padding-bottom: 10px;
     text-align: center;
+  }
+  input[type=text] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  input[type=text]:focus {
+    border: 2px solid #555;
   }
   .hidden {
       display: none;
