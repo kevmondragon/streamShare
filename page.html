@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <title>Stream share</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/siofu/client.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="format.css">
+
+    <h1 <i class="fas fa-cloud" style="font-size:24px;"></i>Stream share</h1>
+</head>
+
+<body>
+
+<div class="center" id="input">
+    <h2>Select one from the following:</h2>
+    <button class="button" id="downloadB">Download</button>
+    <button class="button" id="uploadB">Upload</button>
+</div>
+<form>
+
+<div class="center hidden" id="page2">
+  Select a file: <input type="file" name="file"><br>
+<p>Select Recipients:</p>
+  <input type="text" name="firstname" value="First Name"><br>
+  <input type="text" name="lastname" value="Last Name"><br>
+  <input type="email" name="email" value="E-mail"><br>
+
+<input type="reset">
+<input type="submit" value="Submit">
+</form>
+</div>
+
+<div class="center hidden" id="page1">
+<form>
+    Enter key:<br>
+    <input type="text" name = "key"><br>
+</form>
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
